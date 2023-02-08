@@ -1,1 +1,8 @@
- 
+0-current_working_directory.sh
+#!/bin/bash 
+path=$(realpath "${BASH_SOURCE : -$0})
+echo 'The absolute path is' $path
+echo --------------------------------
+DIR_PATH=$(dirname $path)
+DIR_PATH=$(cd $(dirname "${BASH_SOURCE:-$0}")
+echo 'The directory path is $DIR_PATH
