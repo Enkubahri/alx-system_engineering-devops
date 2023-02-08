@@ -1,3 +1,2 @@
 #!/bin/bash 
-path=$(cd $(dirname -- "$1") >/dev/null; pwd -P)/$(basename -- "$1")
-echo 'The absolute path is' $path 
+echo "$(cd "$(dirname -- "$1")" >/dev/null; pwd -P)/$(basename -- "$1")"
